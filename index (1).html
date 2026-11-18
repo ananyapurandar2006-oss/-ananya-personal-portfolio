@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ananya P | Personal Portfolio</title>
+  <style>
+    :root { --navy:#14213d; --blue:#2563eb; --pale:#eff6ff; --ink:#1f2937; --muted:#64748b; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { font-family:Arial, Helvetica, sans-serif; color:var(--ink); line-height:1.6; background:#f8fafc; }
+    header { position:sticky; top:0; z-index:10; background:#fff; box-shadow:0 2px 12px #0f172a12; }
+    nav { max-width:1100px; margin:auto; padding:14px 22px; display:flex; justify-content:space-between; align-items:center; gap:18px; }
+    .brand { font-weight:800; color:var(--navy); font-size:1.15rem; }
+    nav ul { list-style:none; display:flex; flex-wrap:wrap; gap:16px; }
+    nav a { color:var(--ink); text-decoration:none; font-size:.9rem; font-weight:600; }
+    nav a:hover { color:var(--blue); }
+    .hero { background:linear-gradient(135deg,#14213d,#2563eb); color:white; padding:90px 22px; }
+    .hero-inner { max-width:1100px; margin:auto; }
+    .eyebrow { color:#bfdbfe; font-weight:700; letter-spacing:2px; text-transform:uppercase; font-size:.8rem; }
+    h1 { font-size:clamp(2.4rem,6vw,4.2rem); line-height:1.12; margin:12px 0; }
+    .hero p { max-width:650px; font-size:1.1rem; color:#eaf2ff; }
+    .btn { display:inline-block; margin-top:24px; padding:12px 20px; background:white; color:var(--navy); border-radius:8px; text-decoration:none; font-weight:700; }
+    main { max-width:1000px; margin:auto; padding:25px 22px 60px; }
+    section { scroll-margin-top:90px; padding:42px 0 10px; }
+    h2 { color:var(--navy); font-size:1.7rem; margin-bottom:16px; }
+    .card { background:white; border:1px solid #e2e8f0; border-radius:14px; padding:22px; box-shadow:0 5px 18px #0f172a08; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+    .muted { color:var(--muted); }
+    .tag { display:inline-block; background:var(--pale); color:#1d4ed8; border-radius:20px; padding:7px 12px; margin:5px 5px 0 0; font-size:.9rem; font-weight:600; }
+    .project-title { color:var(--blue); font-weight:800; font-size:1.1rem; margin-bottom:7px; }
+    .contact a { color:var(--blue); text-decoration:none; overflow-wrap:anywhere; }
+    footer { text-align:center; padding:24px; background:var(--navy); color:#dbeafe; }
+    @media (max-width:650px) {
+      nav { align-items:flex-start; flex-direction:column; }
+      nav ul { gap:10px 14px; }
+      .hero { padding:65px 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">ANANYA P</div>
+      <ul>
+        <li><a href="#home">Home</a></li><li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li><li><a href="#certifications">Certifications</a></li>
+        <li><a href="#achievements">Achievements</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+    <div class="hero-inner">
+      <div class="eyebrow">Computer Science Engineering Student</div>
+      <h1>Hello, I'm Ananya P</h1>
+      <p>I'm a third-year Computer Science Engineering student interested in programming, technology and building practical solutions that help people.</p>
+      <a class="btn" href="#projects">Explore My Projects</a>
+    </div>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I am pursuing Computer Science Engineering at GM University. I enjoy learning programming languages and exploring tools such as VS Code, Unity and AWS. I am interested in developing useful technology-based projects and continuously improving my technical skills.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>GM University</h3>
+          <p class="muted">B.E. – Computer Science Engineering</p>
+          <p>Third Year | 5th Semester</p>
+          <p>Expected graduation: 2028</p>
+        </div>
+        <div class="card">
+          <h3>JSS</h3>
+          <p class="muted">School Education</p>
+          <p>Score: 90%</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="card">
+        <h3>Programming Languages</h3>
+        <span class="tag">Python</span><span class="tag">C</span>
+        <h3 style="margin-top:18px">Tools & Technologies</h3>
+        <span class="tag">Visual Studio Code</span><span class="tag">Unity</span><span class="tag">Amazon Web Services (AWS)</span><span class="tag">HTML</span><span class="tag">CSS</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <div class="project-title">Smart Assistance Stick for Visually Impaired People</div>
+        <p>A project designed to support visually impaired people while moving around. The stick detects nearby obstacles and provides alerts to help the user avoid them.</p>
+        <p class="muted" style="margin-top:10px">Focus: Assistive technology | Obstacle detection</p>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="card">
+        <h3>Python Certification</h3>
+        <p class="muted">Certification in Python.</p>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <div class="card">
+        <p>I am continuously learning and developing my technical knowledge through coursework, programming practice and project work.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card contact grid">
+        <p><strong>Location:</strong><br>Davangere, Karnataka</p>
+        <p><strong>Phone:</strong><br><a href="tel:+919740953213">+91 97409 53213</a></p>
+        <p><strong>Email:</strong><br><a href="mailto:ananyapurandar2006@gmail.com">ananyapurandar2006@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Ananya P | Personal Portfolio Website</footer>
+</body>
+</html>
